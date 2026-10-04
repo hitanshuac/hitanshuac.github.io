@@ -1,0 +1,353 @@
+[
+  {
+    "title": "antigravity-agentic-governance-template",
+    "description": "This project uses [repowise](https://repowise.dev) to build a **Tree-sitter AST dependency graph** across all project code. The graph captures impo...",
+    "mermaid_diagram": "graph TD\r\n    %% Domains\r\n    GOV[Governance & Quality]\r\n    AGENT[Agentic Engineering]\r\n    PROD[Product & Execution]\r\n    DATA[Data & Infrastructure]\r\n    OPS[CI/CD & Operations]\r\n\r\n    %% Dependencies\r\n    AGENT -->|Governed by| GOV\r\n    PROD -->|Powered by| AGENT\r\n    DATA -->|Orchestrated by| PROD\r\n    OPS -->|Deploys| DATA",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/antigravity-agentic-governance-template",
+    "is_private": false,
+    "language": "Python"
+  },
+  {
+    "title": "Antigravity-OS",
+    "description": "Antigravity OS is the core Agentic Engine (Single Source of Truth) that provides the \"hands\" for an AI agent. It allows an LLM to reliably edit fil...",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Antigravity-OS",
+    "is_private": false,
+    "language": "Python"
+  },
+  {
+    "title": "Antigravity_Environment_Max_V2",
+    "description": "This repository serves as a powerful, extensible **Base Agentic Environment** built on the Antigravity framework. It utilizes a strict **Split-Plan...",
+    "mermaid_diagram": "graph TD\n    A[Test Suite Trigger] --> B{Evaluation Type}\n    B -->|Deterministic| C[Code Integrity]\n    C --> D[Pydantic Validation DLQ]\n    C --> E[DuckDB Idempotency]\n    B -->|Probabilistic| G[AI Behavior & Alignment]\n    G --> H[LLM-as-a-Judge API]\n    H --> I{Score >= 4?}\n    I -->|Yes| J[Pass]\n    I -->|No| K[Fail]",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Antigravity_Environment_Max_V2",
+    "is_private": true,
+    "language": "Python"
+  },
+  {
+    "title": "ArenaPulse-AI",
+    "description": "This repository serves as a powerful, extensible **Agentic Triage Cockpit** built on a strict **Split-Plane Architecture**. It separates the determ...",
+    "mermaid_diagram": "graph TD\r\n    A[Test Suite Trigger] --> B{Evaluation Type}\r\n    B -->|Deterministic| C[Trajectory & Integrity]\r\n    C --> D[Tool-Call Accuracy]\r\n    C --> E[Step Efficiency]\r\n    B -->|Probabilistic| G[AI Behavior & Alignment]\r\n    G --> H[LLM-as-a-Judge Rubrics]\r\n    H --> I{Trajectory Score Pass?}\r\n    I -->|Yes| J[Pass]\r\n    I -->|No| K[Fail & Log Trace]",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/ArenaPulse-AI",
+    "is_private": false,
+    "language": "Python"
+  },
+  {
+    "title": "BCI_FMS_Script",
+    "description": "This system automates:",
+    "mermaid_diagram": "flowchart TD\n    A[User edits a Status cell] --> B[Trigger detects edit]\n    B --> C{Is value Yes / No / Done / TRUE?}\n    C -->|No| D[Do Nothing]\n    C -->|Yes| E[Identify mapped Actual column]\n    E --> F{Is timestamp cell empty?}\n    F -->|No| G[Do Nothing - Preserve existing data]\n    F -->|Yes| H[Write current Date-Time]",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/BCI_FMS_Script",
+    "is_private": true,
+    "language": "JavaScript"
+  },
+  {
+    "title": "BOM-Form",
+    "description": "A Google Sheets\u2013backed web app for **Bill of Materials (BOM)** and **Inventory In/Out (IMS)** entry with fast search, client filtering, image-rich ...",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/BOM-Form",
+    "is_private": false,
+    "language": null
+  },
+  {
+    "title": "BOM_Webapp",
+    "description": "Briefly describe what this automation does. (e.g., \"An automated pipeline that extracts data from Google Sheets and triggers specific actions.\")",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/BOM_Webapp",
+    "is_private": true,
+    "language": "HTML"
+  },
+  {
+    "title": "CMT_Form",
+    "description": "No objective provided.",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/CMT_Form",
+    "is_private": true,
+    "language": "HTML"
+  },
+  {
+    "title": "conceptkart-etl-pipeline",
+    "description": "A production-grade, Agentic ETL (Extract, Transform, Load) pipeline designed to dynamically track, analyze, and alert on e-commerce pricing data. T...",
+    "mermaid_diagram": "graph TD\n    A[Scheduler Trigger] --> B[Tier 1: curl-cffi]\n    B -->|Failed| C[Tier 2: Crawl4AI]\n    C -->|Failed| D[Tier 3: LLM Self-Healing]\n    B -->|Success| E[Pydantic Validation]\n    C -->|Success| E\n    D -->|Success| E\n    E -->|Valid| F[Supabase Upsert]\n    E -->|Invalid| G[Parquet DLQ]\n    F -->|Network Error| G",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/conceptkart-etl-pipeline",
+    "is_private": false,
+    "language": "Python"
+  },
+  {
+    "title": "cooking-to-do-list",
+    "description": "An interactive, AI-driven micro-app designed to generate a highly personalized daily **cooking to-do list**.",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/cooking-to-do-list",
+    "is_private": false,
+    "language": "Python"
+  },
+  {
+    "title": "Daily_Pending_Orders_Auto_email",
+    "description": "Briefly describe what this automation does. (e.g., \"An automated pipeline that extracts data from Google Sheets and triggers specific actions.\")",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Daily_Pending_Orders_Auto_email",
+    "is_private": true,
+    "language": "JavaScript"
+  },
+  {
+    "title": "ERP_Pipeline_Project",
+    "description": "This project automates the ingestion, transformation, and reverse-ETL of raw CSV data exports from our ERP system to Google Sheets. It leverages a ...",
+    "mermaid_diagram": "graph TD\n    A[Test Suite Trigger] --> B{Evaluation Type}\n    B -->|Deterministic| C[Code Integrity]\n    C --> D[Pydantic Validation DLQ]\n    C --> E[DuckDB Idempotency]\n    B -->|Probabilistic| G[AI Behavior & Alignment]\n    G --> H[LLM-as-a-Judge API]\n    H --> I{Score >= 4?}\n    I -->|Yes| J[Pass]\n    I -->|No| K[Fail]",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/ERP_Pipeline_Project",
+    "is_private": true,
+    "language": "Python"
+  },
+  {
+    "title": "Finvestor",
+    "description": "Built for the **IDBI Bank Hackathon**, Finvestor is an AI-powered Digital Wealth Advisory platform designed to bring personalized, private-banking-...",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Finvestor",
+    "is_private": false,
+    "language": "Python"
+  },
+  {
+    "title": "FMS",
+    "description": "This system automates:",
+    "mermaid_diagram": "flowchart TD\n    A[User edits a Status cell] --> B[Trigger detects edit]\n    B --> C{Is value Yes / No / Done / TRUE?}\n    C -->|No| D[Do Nothing]\n    C -->|Yes| E[Identify mapped Actual column]\n    E --> F{Is timestamp cell empty?}\n    F -->|No| G[Do Nothing - Preserve existing data]\n    F -->|Yes| H[Write current Date-Time]",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/FMS",
+    "is_private": false,
+    "language": null
+  },
+  {
+    "title": "GAS_to_GIT_Automation",
+    "description": "No description available.",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/GAS_to_GIT_Automation",
+    "is_private": true,
+    "language": "Python"
+  },
+  {
+    "title": "GAS_to_GIT_Automations",
+    "description": "This repository manages the automated synchronization of Google Apps Script (GAS) projects to dual Git accounts (Organizational and Personal). It e...",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/GAS_to_GIT_Automations",
+    "is_private": true,
+    "language": "Python"
+  },
+  {
+    "title": "gemini-api-rag",
+    "description": "This project uses [repowise](https://repowise.dev) to build a **Tree-sitter AST dependency graph** across all project code. The graph captures impo...",
+    "mermaid_diagram": "graph TD\r\n    %% Domains\r\n    GOV[Governance & Quality]\r\n    AGENT[Agentic Engineering]\r\n    PROD[Product & Execution]\r\n    DATA[Data & Infrastructure]\r\n    OPS[CI/CD & Operations]\r\n\r\n    %% Dependencies\r\n    AGENT -->|Governed by| GOV\r\n    PROD -->|Powered by| AGENT\r\n    DATA -->|Orchestrated by| PROD\r\n    OPS -->|Deploys| DATA",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/gemini-api-rag",
+    "is_private": false,
+    "language": "Python"
+  },
+  {
+    "title": "GRN_Done_Email",
+    "description": "Briefly describe what this automation does. (e.g., \"An automated pipeline that extracts data from Google Sheets and triggers specific actions.\")",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/GRN_Done_Email",
+    "is_private": true,
+    "language": "JavaScript"
+  },
+  {
+    "title": "hitanshuac.github.io",
+    "description": "No description available.",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/hitanshuac.github.io",
+    "is_private": false,
+    "language": "JavaScript"
+  },
+  {
+    "title": "hybrid-ai-router",
+    "description": "A high-performance, SRE-grade API Gateway and Data Engineering pipeline. This system maximizes cloud resilience through a multi-provider waterfall ...",
+    "mermaid_diagram": "graph TD\n    %% Styling\n    classDef frontend fill:#38bdf8,stroke:#0f172a,stroke-width:2px,color:#0a0e1a;\n    classDef backend fill:#818cf8,stroke:#0f172a,stroke-width:2px,color:#0a0e1a;\n    classDef router fill:#fbbf24,stroke:#0f172a,stroke-width:2px,color:#0a0e1a;\n    classDef db fill:#4ade80,stroke:#0f172a,stroke-width:2px,color:#0a0e1a;\n    classDef provider fill:#1e293b,stroke:#38bdf8,stroke-width:2px,color:#f1f5f9;\n\n    %% Frontends\n    subgraph Client [\"Client Interfaces\"]\n        SPA[\"\ud83d\udcbb SPA Web Console (Chat & Dashboard)\"]:::frontend\n    end\n\n    %% Backend Server\n    subgraph Server [\"Hugging Face Space (Port 7860)\"]\n        API[\"\u26a1 FastAPI Application\"]:::backend\n        CB[\"\ud83d\udee1\ufe0f SRE Circuit Breaker & Compaction\"]:::backend\n        \n        API --> CB\n        \n        %% Database Layer\n        subgraph Persistence [\"Data Layer\"]\n            DuckDB[(\"\ud83e\udd86 DuckDB (Telemetry)\")]:::db\n            Chroma[(\"\ud83e\udde0 ChromaDB (RAG Vector State)\")]:::db\n        end\n        CB -.->|\"Logs metrics\"| DuckDB\n        CB -.->|\"Context Search\"| Chroma\n        \n        %% Cascade Router\n        subgraph Cascade [\"9-Tier Hybrid Cascade Engine\"]\n            Tier1[\"1. Groq (Llama-3-70B)\"]:::provider\n            Tier2[\"2. Groq (Mixtral)\"]:::provider\n            Tier3[\"3. AI Studio (Gemini-1.5-Flash)\"]:::provider\n            Tier4[\"4. OpenRouter (Qwen-2.5-Coder)\"]:::provider\n            Tier5[\"5. OpenRouter (Llama-3-8B-Free)\"]:::provider\n            Tier6[\"6. OpenRouter (Phi-3-128k-Free)\"]:::provider\n            Tier7[\"7. NVIDIA NIM (Llama-3)\"]:::provider\n            Tier8[\"8. NVIDIA NIM (Mistral-Nemo)\"]:::provider\n            Tier9[\"9. NVIDIA NIM (Qwen-2.5-72B)\"]:::provider\n            \n            Tier1 -->|\"Fallback\"| Tier2\n            Tier2 -->|\"Fallback\"| Tier3\n            Tier3 -->|\"Fallback\"| Tier4\n            Tier4 -->|\"Fallback\"| Tier5\n            Tier5 -->|\"Fallback\"| Tier6\n            Tier6 -->|\"Fallback\"| Tier7\n            Tier7 -->|\"Fallback\"| Tier8\n            Tier8 -->|\"Fallback\"| Tier9\n        end\n        \n        CB -->|\"Routes Payload\"| Cascade\n    end\n\n    %% Wiring\n    SPA -->|\"GET / \"| API\n    SPA -->|\"POST /v1/chat/completions \"| API\n    SPA -->|\"GET /api/v1/metrics/efficiency \"| API",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/hybrid-ai-router",
+    "is_private": false,
+    "language": "Python"
+  },
+  {
+    "title": "Hybrid-AI-Router-Vision",
+    "description": "license: mit",
+    "mermaid_diagram": "flowchart TD\n    classDef client fill:#0A192F,stroke:#00F0FF,stroke-width:2px,color:#00F0FF\n    classDef gate fill:#170F1C,stroke:#B5179E,stroke-width:2px,color:#B5179E\n    classDef engine fill:#0F1C11,stroke:#39FF14,stroke-width:2px,color:#39FF14\n    classDef provider fill:#1E293B,stroke:#F72585,stroke-width:2px,color:#F72585\n    classDef db fill:#1C0A0D,stroke:#FF073A,stroke-width:2px,color:#FF073A\n    classDef breaker fill:#1F190F,stroke:#FF9F1C,stroke-width:2px,color:#FF9F1C\n\n    subgraph Ingress [\"Client Ingress Layer\"]\n        direction TB\n        Client[\"Client Applications\"]\n        APIGateway[\"FastAPI Core :8001\"]\n        DePoison[\"Telemetry De-Poisoner\"]\n        Client --> APIGateway --> DePoison\n    end\n\n    DePoison -->|\"/v1/chat/completions\"| ChatRouter\n    DePoison -->|\"/api/v1/pipeline/ingest\"| IngestionEngine\n\n    subgraph ChatRouter [\"Engine A: Multi-Modal Chat Gateway\"]\n        direction TB\n        DeepCopy[\"1. Message Deep Copy\"] -->\n        Grounding[\"2. Context Grounding\"] -->\n        Compaction[\"3. Sliding Window Compaction\"] -->\n        TokenEst[\"4. Token Estimator\"] -->\n        CB_Check{\"5. 3-State Circuit Breaker Check\"}\n        \n        CB_Check -->|\"CLOSED / HALF_OPEN (Canary)\"| RouteCascade{\"Route Payload\"}\n        CB_Check -->|\"OPEN (Blocked)\"| FastFail[\"Fast Fail / Retry-After\"]\n        \n        RouteCascade -->|\"Image / High Context\"| VisionTier[\"Vision Cascade\"]\n        RouteCascade -->|\"Text Only\"| TextTier[\"Text Cascade\"]\n    end\n\n    subgraph Cascades [\"Dynamic Fallback Tiers\"]\n        direction LR\n        subgraph TextFallback [\"Text Cascade\"]\n            T1[\"Groq (L3.3)\"] --> T2[\"OpenRouter (G4)\"] --> T3[\"NVIDIA (L3.1)\"] --> T4[\"Gemini (G2.5)\"] --> T5[\"Ollama (G2)\"]\n        end\n        subgraph VisionFallback [\"Vision Cascade\"]\n            V1[\"Groq Vision (L3.2)\"] --> V2[\"OpenRouter Vision (G2.5)\"] --> V3[\"NVIDIA Vision (L3.2)\"] --> V4[\"Gemini Vision (G2.5)\"] --> V5[\"Ollama Vision (Llava)\"]\n        end\n    end\n\n    subgraph IngestionEngine [\"Engine B: Polymorphic Ingestion Engine\"]\n        direction TB\n        Pydantic[\"Stage 1: Pydantic Validation\"] -->\n        CacheCheck{\"Stage 2: Layout Cache Check\"}\n        \n        CacheCheck -->|\"Cache HIT ($0 cost)\"| DocFork{\"Document Type\"}\n        CacheCheck -->|\"Cache MISS\"| Classifier[\"Stage 3: Gemini Classifier\"]\n        Classifier --> DocFork\n        \n        DocFork -->|\"INVOICE\"| InvExtract[\"Stage 4a: Schema Extraction\"]\n        InvExtract --> SilverAudit[\"Stage 5a: SQL Silver Layer Audit\"]\n        \n        DocFork -->|\"LETTER\"| LetExtract[\"Stage 4b: Semantic Extraction\"]\n        LetExtract --> IntentAudit[\"Stage 5b: Intent Analytics\"]\n        \n        DocFork -->|\"ERROR\"| DLQ[\"Stage 4c: DLQ Quarantine\"]\n    end\n\n    subgraph Persistence [\"SRE Async Persistence Layer (Single-Writer Actor)\"]\n        direction TB\n        AsyncQueue[\"asyncio.Queue (maxsize=1000)\"]\n        WriterTask[\"Background Writer Task\"]\n        BronzeDB[(\"Bronze: DuckDB Ledgers\")]\n        DLQParquet[(\"DLQ: Parquet Lake\")]\n        \n        AsyncQueue -->|O(1) Drainage| WriterTask\n        WriterTask -->|Atomic Commit| BronzeDB\n        WriterTask -->|Atomic Append| DLQParquet\n    end\n\n    subgraph CQRS [\"CQRS Read Layer (Analytical)\"]\n        direction TB\n        ReadOnlyConn[\"duckdb.connect(read_only=False)\"]\n        AuditView[\"vw_silver_invoice_audit\"]\n        LinesView[\"vw_silver_invoice_line_items\"]\n        DupsView[\"vw_silver_invoice_duplicates\"]\n        \n        ReadOnlyConn --> AuditView\n        ReadOnlyConn --> LinesView\n        ReadOnlyConn --> DupsView\n        \n        AuditView --> HTMLTable[\"HTML Dashboard + CSV Export\"]\n        LinesView --> HTMLTable\n        DupsView --> HTMLTable\n    end\n\n    SilverAudit -->|Enqueue| AsyncQueue\n    IntentAudit -->|Enqueue| AsyncQueue\n    DLQ -->|Enqueue| AsyncQueue\n    \n    Classifier -.->|Async Cache Store| AsyncQueue\n    \n    BronzeDB -.->|\"Silver Views (Read-time)\"| ReadOnlyConn\n\n    Cascades --> APIGateway\n    HTMLTable --> APIGateway\n\n    class Client,APIGateway,DePoison client\n    class DeepCopy,Grounding,Compaction,TokenEst,CB_Check,FastFail,RouteCascade gate\n    class T1,T2,T3,T4,T5,V1,V2,V3,V4,V5 provider\n    class Pydantic,CacheCheck,Classifier,DocFork,InvExtract,SilverAudit,LetExtract,IntentAudit,DLQ engine\n    class AsyncQueue,WriterTask,BronzeDB,DLQParquet db\n    class ReadOnlyConn,AuditView,LinesView,DupsView,HTMLTable breaker",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Hybrid-AI-Router-Vision",
+    "is_private": false,
+    "language": "Python"
+  },
+  {
+    "title": "IMS_Webapp",
+    "description": "Briefly describe what this automation does. (e.g., \"An automated pipeline that extracts data from Google Sheets and triggers specific actions.\")",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/IMS_Webapp",
+    "is_private": false,
+    "language": "HTML"
+  },
+  {
+    "title": "Indent_app",
+    "description": "A Google Apps Script + HTML web app to capture Purchase Orders into Google Sheets with client/style autocomplete, SKU/Item lookups, duplicate prote...",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Indent_app",
+    "is_private": true,
+    "language": "HTML"
+  },
+  {
+    "title": "Ledger",
+    "description": "A lightweight, auditable petty-cash system built on **Google Sheets + Apps Script**.",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Ledger",
+    "is_private": false,
+    "language": null
+  },
+  {
+    "title": "Maatrika",
+    "description": "A mystical, mobile-first tarot card reading application with gamification mechanics \u2014 daily draws, points, streaks, and unlockable deck styles.",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Maatrika",
+    "is_private": true,
+    "language": "JavaScript"
+  },
+  {
+    "title": "mall-audit-tracker",
+    "description": "A mobile-first web application for **Maavya Consulting's** 2-day Visual Merchandising Training Program. Built for non-technical mall operations sta...",
+    "mermaid_diagram": "graph TD\n    APP[app.js] --> API[api.js]\n    APP --> STATE[state.js]\n    APP --> NAV[ui/navigation.js]\n    APP --> AUDIT[ui/audit.js]\n    APP --> QUIZ[ui/quiz.js]\n    APP --> FB[ui/feedback.js]\n    APP --> GAME[ui/game.js]\n    APP --> PROG[ui/program.js]\n    APP --> DASH[ui/dashboard.js]\n    APP --> UTILS[ui/utils.js]\n    APP --> ERRLOG[ui/error-logger.js]\n\n    AUDIT --> DATA[data.js]\n    AUDIT --> API\n    AUDIT --> UTILS\n    AUDIT --> SCORING[domain/scoring.js]\n    AUDIT --> OFFLINE_REP[services/offline-report.js]\n\n    QUIZ --> DATA\n    QUIZ --> API\n    QUIZ --> UTILS\n    QUIZ --> SCORING\n\n    FB --> API\n    FB --> UTILS\n\n    GAME --> DATA\n    GAME --> UTILS\n\n    PROG --> DATA\n\n    DASH --> DATA\n    DASH --> API\n\n    UTILS --> API\n\n    NAV --> DASH\n    NAV --> ERRLOG\n\n    ERRLOG --> API",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/mall-audit-tracker",
+    "is_private": true,
+    "language": "JavaScript"
+  },
+  {
+    "title": "mental-wellness-tracker",
+    "description": "A simple, engaging tool that acts as an empathetic, always-available digital companion for students preparing for high-stakes board exams and compe...",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/mental-wellness-tracker",
+    "is_private": false,
+    "language": "Python"
+  },
+  {
+    "title": "Mermaid",
+    "description": "Google Sheets \u2192 **link map** + **Mermaid diagram** + **HTML viewer**.",
+    "mermaid_diagram": "graph TD\n  A[Drive Folders] -->|collectSheetsRecursive| B[File IDs]\n  B -->|batchProcessNext (BATCH_SIZE N)| C[Scan Sheets]\n  C -->|detect formula types & ranges| D[LinkBuffer (raw)]\n  D -->|dedupe & normalize| E[FormulaLinks (clean)]\n  E -->|edges| F[Flowchart (Mermaid code)]\n  F -->|cleanMermaid| G[flowchart_cleaned.mmd]\n  G -->|wrap HTML| H[flowchart_viewer.html]\n  E --> I[Grouped_Tree]\n  C --> J[Progress log]",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Mermaid",
+    "is_private": false,
+    "language": null
+  },
+  {
+    "title": "Mermaid_Flowchart_Extract_Existing_Docs_Interlink",
+    "description": "Google Sheets \u2192 **link map** + **Mermaid diagram** + **HTML viewer**.",
+    "mermaid_diagram": "graph TD\n  A[Drive Folders] -->|collectSheetsRecursive| B[File IDs]\n  B -->|batchProcessNext (BATCH_SIZE N)| C[Scan Sheets]\n  C -->|detect formula types & ranges| D[LinkBuffer (raw)]\n  D -->|dedupe & normalize| E[FormulaLinks (clean)]\n  E -->|edges| F[Flowchart (Mermaid code)]\n  F -->|cleanMermaid| G[flowchart_cleaned.mmd]\n  G -->|wrap HTML| H[flowchart_viewer.html]\n  E --> I[Grouped_Tree]\n  C --> J[Progress log]",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Mermaid_Flowchart_Extract_Existing_Docs_Interlink",
+    "is_private": true,
+    "language": "JavaScript"
+  },
+  {
+    "title": "o2d_dashboard",
+    "description": "Briefly describe what this automation does. (e.g., \"An automated pipeline that extracts data from Google Sheets and triggers specific actions.\")",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/o2d_dashboard",
+    "is_private": true,
+    "language": "HTML"
+  },
+  {
+    "title": "Order",
+    "description": "A Google Apps Script + HTML web app to capture Purchase Orders into Google Sheets with client/style autocomplete, SKU/Item lookups, duplicate prote...",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Order",
+    "is_private": false,
+    "language": null
+  },
+  {
+    "title": "Pending_GRN_Emails",
+    "description": "Automate the extraction, bucketing, and distribution of pending Goods Receipt Note (GRN) data for styles where trims are marked as physically in-ho...",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Pending_GRN_Emails",
+    "is_private": true,
+    "language": "JavaScript"
+  },
+  {
+    "title": "Petty_Cash",
+    "description": "A lightweight, auditable petty-cash system built on **Google Sheets + Apps Script**.",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Petty_Cash",
+    "is_private": true,
+    "language": "JavaScript"
+  },
+  {
+    "title": "Piece-Rate-Webapp-Form",
+    "description": "Below is a **GitHub README-ready** document tailored **exactly** to the `Code.gs` and `Index.html` you pasted (including: preloaded `allData/tailor...",
+    "mermaid_diagram": "flowchart TD\n  A[\"Open Web App URL\"] --> B[\"doGet()\"]\n  B --> C[\"Read Cutting_data\"]\n  B --> D[\"Read Tailor\"]\n  C --> E[\"Build allData[]\"]\n  D --> F[\"Build tailors[]\"]\n  E --> G[\"Inject allData into Index.html\"]\n  F --> H[\"Inject tailors into Index.html\"]\n  G --> I[\"Client-side filtering (Buyer \u2192 Style \u2192 Operation)\"]\n  H --> I\n  I --> J[\"User fills rows + quantity\"]\n  J --> K[\"Client computes Amount = Rate \u00d7 Qty\"]\n  K --> L[\"Submit\"]\n  L --> M[\"submitForm(payload)\"]\n  M --> N{\"Server validations OK?\"}\n  N -->|Yes| O[\"Append rows to Data_Entry\"]\n  N -->|No| P[\"Return error message\"]\n  O --> Q[\"UI shows Saved + resets row\"]",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Piece-Rate-Webapp-Form",
+    "is_private": false,
+    "language": null
+  },
+  {
+    "title": "piece_rate_form",
+    "description": "Below is a **GitHub README-ready** document tailored **exactly** to the `Code.gs` and `Index.html` you pasted (including: preloaded `allData/tailor...",
+    "mermaid_diagram": "flowchart TD\n  A[\"Open Web App URL\"] --> B[\"doGet()\"]\n  B --> C[\"Read Cutting_data\"]\n  B --> D[\"Read Tailor\"]\n  C --> E[\"Build allData[]\"]\n  D --> F[\"Build tailors[]\"]\n  E --> G[\"Inject allData into Index.html\"]\n  F --> H[\"Inject tailors into Index.html\"]\n  G --> I[\"Client-side filtering (Buyer \u2192 Style \u2192 Operation)\"]\n  H --> I\n  I --> J[\"User fills rows + quantity\"]\n  J --> K[\"Client computes Amount = Rate \u00d7 Qty\"]\n  K --> L[\"Submit\"]\n  L --> M[\"submitForm(payload)\"]\n  M --> N{\"Server validations OK?\"}\n  N -->|Yes| O[\"Append rows to Data_Entry\"]\n  N -->|No| P[\"Return error message\"]\n  O --> Q[\"UI shows Saved + resets row\"]",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/piece_rate_form",
+    "is_private": true,
+    "language": "HTML"
+  },
+  {
+    "title": "Playday-POs-Released",
+    "description": "This project uses [repowise](https://repowise.dev) to build a **Tree-sitter AST dependency graph** across all project code. The graph captures impo...",
+    "mermaid_diagram": "graph TD\r\n    %% Domains\r\n    GOV[Governance & Quality]\r\n    AGENT[Agentic Engineering]\r\n    PROD[Product & Execution]\r\n    DATA[Data & Infrastructure]\r\n    OPS[CI/CD & Operations]\r\n\r\n    %% Dependencies\r\n    AGENT -->|Governed by| GOV\r\n    PROD -->|Powered by| AGENT\r\n    DATA -->|Orchestrated by| PROD\r\n    OPS -->|Deploys| DATA",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Playday-POs-Released",
+    "is_private": true,
+    "language": "Python"
+  },
+  {
+    "title": "Pressing_form",
+    "description": "Drive a Pressing Salary web form where dropdowns, filters, and autofill behavior are fully controlled by Google Sheets data without hardcoding.",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/Pressing_form",
+    "is_private": true,
+    "language": "HTML"
+  },
+  {
+    "title": "RCA_v4",
+    "description": "This project is an advanced, automated ERP Dashboard designed to synthesize and visualize procurement pipelines, supplier SLA compliance, and facto...",
+    "mermaid_diagram": null,
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/RCA_v4",
+    "is_private": true,
+    "language": "Python"
+  },
+  {
+    "title": "yeti-tracker",
+    "description": "This project was built for the **Hack2Skill Generative AI Hackathon**.",
+    "mermaid_diagram": "graph TD;\n    A[app.py] -->|1. LLM Ingestion| B(llm_service.py);\n    B -->|2. Parse Integers| C{Verification Gate};\n    C -->|3. Verified Inputs| D(carbon_engine.py);\n    D -->|4. OLAP Queries| E[DuckDB Instance];\n    E -->|5. Anomalies & Percentiles| D;\n    D -->|6. Gamified Metrics| F(chart_factory.py);\n    F -->|7. UI Rendering| A;",
+    "impact_metrics": null,
+    "url": "https://github.com/hitanshuac/yeti-tracker",
+    "is_private": false,
+    "language": "Python"
+  }
+]

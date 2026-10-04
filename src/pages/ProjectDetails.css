@@ -1,0 +1,109 @@
+.back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #94a3b8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: #f8fafc;
+}
+
+.project-detail-container {
+  margin-bottom: 4rem;
+}
+
+.detail-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-description {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: var(--glass-border);
+  margin: 3rem 0;
+}
+
+/* Business Impact Dashboard */
+.impact-dashboard {
+  background: linear-gradient(135deg, rgba(79, 172, 254, 0.1) 0%, rgba(0, 242, 254, 0.05) 100%);
+  border: 1px solid rgba(79, 172, 254, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 30px -10px rgba(79, 172, 254, 0.2);
+}
+
+.impact-dashboard h3 {
+  color: #4facfe;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.impact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.impact-list li {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.impact-check {
+  color: #00f2fe;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Live Dashboard Styles */
+.live-dashboard {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 69, 58, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  animation: pulse-border 2s infinite alternate;
+}
+
+.live-dashboard h3 {
+  color: #ff453a;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.live-status {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-family: monospace;
+}
+
+@keyframes pulse-border {
+  from { border-color: rgba(255, 69, 58, 0.2); }
+  to { border-color: rgba(255, 69, 58, 0.6); }
+}
+
+/* Mermaid Wrapper */
+.mermaid-wrapper {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}

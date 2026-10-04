@@ -51,18 +51,23 @@ def fetch_repos():
         'Accept': 'application/vnd.github.v3+json'
     }
     
-    # Fetch user repos (this endpoint gets public and private repos for the authenticated user)
-    # Using 'user/repos' to get repositories for the authenticated user (which includes private ones if token has repo scope)
-    # Affiliation owner ensures we get repos owned by the user.
+    # Try user/repos first (requires PAT), fallback to users/hitanshuac/repos (public only)
     repos_url = 'https://api.github.com/user/repos?affiliation=owner&per_page=100'
     repos = []
     
     while repos_url:
         print(f"Fetching {repos_url}...")
         response = requests.get(repos_url, headers=headers)
+        
+        if response.status_code == 403 and 'user/repos' in repos_url:
+            print("Token lacks permission for /user/repos. Falling back to public repos only.")
+            repos_url = 'https://api.github.com/users/hitanshuac/repos?per_page=100'
+            continue
+            
         if response.status_code != 200:
             print(f"Failed to fetch repos: {response.text}")
             sys.exit(1)
+            
         repos.extend(response.json())
         
         # Handle pagination
